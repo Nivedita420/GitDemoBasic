@@ -1,0 +1,553 @@
+
+nivedita_dhok@NGD10215 MINGW64 ~
+$ cd D:/Knowledge center/GitDem
+bash: cd: too many arguments
+
+nivedita_dhok@NGD10215 MINGW64 ~
+$ cd D:/Knowledge center/GitDemo
+bash: cd: too many arguments
+
+nivedita_dhok@NGD10215 MINGW64 ~
+$  /D:/Knowledge center/GitDemo
+bash: /D:/Knowledge: No such file or directory
+
+nivedita_dhok@NGD10215 MINGW64 ~
+$ cd D:/Knowledgcenter/GitDemo
+
+nivedita_dhok@NGD10215 MINGW64 /d/Knowledgcenter/GitDemo
+$ git config --global user.name "nivedita"
+
+nivedita_dhok@NGD10215 MINGW64 /d/Knowledgcenter/GitDemo
+$ git config --global user.email "nivedita_dhok@persistent.com"
+
+nivedita_dhok@NGD10215 MINGW64 /d/Knowledgcenter/GitDemo
+$ git config user.name
+nivedita
+
+nivedita_dhok@NGD10215 MINGW64 /d/Knowledgcenter/GitDemo
+$ git config --list
+core.symlinks=false
+core.autocrlf=true
+core.fscache=true
+color.diff=auto
+color.status=auto
+color.branch=auto
+color.interactive=true
+help.format=html
+rebase.autosquash=true
+http.sslcainfo=C:/Program Files/Git/mingw64/ssl/certs/ca-bundle.crt
+diff.astextplain.textconv=astextplain
+filter.lfs.clean=git-lfs clean -- %f
+filter.lfs.smudge=git-lfs smudge -- %f
+filter.lfs.required=true
+filter.lfs.process=git-lfs filter-process
+credential.helper=manager
+filter.lfs.clean=git-lfs clean -- %f
+filter.lfs.smudge=git-lfs smudge -- %f
+filter.lfs.required=true
+user.name=nivedita
+user.email=nivedita_dhok@persistent.com
+
+nivedita_dhok@NGD10215 MINGW64 /d/Knowledgcenter/GitDemo
+$ ^C
+
+nivedita_dhok@NGD10215 MINGW64 /d/Knowledgcenter/GitDemo
+$ git init
+Initialized empty Git repository in D:/Knowledgcenter/GitDemo/.git/
+
+nivedita_dhok@NGD10215 MINGW64 /d/Knowledgcenter/GitDemo (master)
+$ git status
+On branch master
+
+Initial commit
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        File1abc.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+nivedita_dhok@NGD10215 MINGW64 /d/Knowledgcenter/GitDemo (master)
+$ git add File1abc.txt ile
+fatal: pathspec 'ile' did not match any files
+
+nivedita_dhok@NGD10215 MINGW64 /d/Knowledgcenter/GitDemo (master)
+$ git add File1abc.txt
+
+nivedita_dhok@NGD10215 MINGW64 /d/Knowledgcenter/GitDemo (master)
+$ git commit -m "File1abc.txt is created and merge"
+[master (root-commit) 0cdc72f] File1abc.txt is created and merge
+ 1 file changed, 1 insertion(+)
+ create mode 100644 File1abc.txt
+
+nivedita_dhok@NGD10215 MINGW64 /d/Knowledgcenter/GitDemo (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+nivedita_dhok@NGD10215 MINGW64 /d/Knowledgcenter/GitDemo (master)
+$ git statu
+git: 'statu' is not a git command. See 'git --help'.
+
+Did you mean one of these?
+        status
+        stage
+        stash
+
+nivedita_dhok@NGD10215 MINGW64 /d/Knowledgcenter/GitDemo (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   File1abc.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+nivedita_dhok@NGD10215 MINGW64 /d/Knowledgcenter/GitDemo (master)
+$ git add .
+
+nivedita_dhok@NGD10215 MINGW64 /d/Knowledgcenter/GitDemo (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        modified:   File1abc.txt
+
+
+nivedita_dhok@NGD10215 MINGW64 /d/Knowledgcenter/GitDemo (master)
+$ git commit -m "changes in file1"
+[master bd61828] changes in file1
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+
+nivedita_dhok@NGD10215 MINGW64 /d/Knowledgcenter/GitDemo (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+nivedita_dhok@NGD10215 MINGW64 /d/Knowledgcenter/GitDemo (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   File1abc.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+nivedita_dhok@NGD10215 MINGW64 /d/Knowledgcenter/GitDemo (master)
+$ git commit -m "changes in file2"
+On branch master
+Changes not staged for commit:
+        modified:   File1abc.txt
+
+no changes added to commit
+
+nivedita_dhok@NGD10215 MINGW64 /d/Knowledgcenter/GitDemo (master)
+$ git add .
+
+nivedita_dhok@NGD10215 MINGW64 /d/Knowledgcenter/GitDemo (master)
+$ git commit -m "changes in file2"
+[master eebd857] changes in file2
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+
+nivedita_dhok@NGD10215 MINGW64 /d/Knowledgcenter/GitDemo (master)
+$ git commit -am "changes in file3"
+[master c002cac] changes in file3
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+
+nivedita_dhok@NGD10215 MINGW64 /d/Knowledgcenter/GitDemo (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+nivedita_dhok@NGD10215 MINGW64 /d/Knowledgcenter/GitDemo (master)
+$ git log
+commit c002cac8f18c8d784fbed1d34cf8f8a7940c25e6 (HEAD -> master)
+Author: nivedita <nivedita_dhok@persistent.com>
+Date:   Mon Apr 16 15:02:12 2018 +0530
+
+    changes in file3
+
+commit eebd8570fd76b90408daa614f0f8e337587a1544
+Author: nivedita <nivedita_dhok@persistent.com>
+Date:   Mon Apr 16 15:00:52 2018 +0530
+
+    changes in file2
+
+commit bd61828e44109e185610656fbc6fd3fc9ad86b63
+Author: nivedita <nivedita_dhok@persistent.com>
+Date:   Mon Apr 16 14:59:19 2018 +0530
+
+    changes in file1
+
+commit 0cdc72f7d82977e2c81a463079d9d797b8a8f012
+Author: nivedita <nivedita_dhok@persistent.com>
+Date:   Mon Apr 16 14:55:21 2018 +0530
+
+    File1abc.txt is created and merge
+
+nivedita_dhok@NGD10215 MINGW64 /d/Knowledgcenter/GitDemo (master)
+$ git log --oneline
+c002cac (HEAD -> master) changes in file3
+eebd857 changes in file2
+bd61828 changes in file1
+0cdc72f File1abc.txt is created and merge
+
+nivedita_dhok@NGD10215 MINGW64 /d/Knowledgcenter/GitDemo (master)
+$ git log help
+fatal: ambiguous argument 'help': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+
+nivedita_dhok@NGD10215 MINGW64 /d/Knowledgcenter/GitDemo (master)
+$ git log --help
+
+nivedita_dhok@NGD10215 MINGW64 /d/Knowledgcenter/GitDemo (master)
+$ git log --oneline --author="nivedita" -2
+c002cac (HEAD -> master) changes in file3
+eebd857 changes in file2
+
+nivedita_dhok@NGD10215 MINGW64 /d/Knowledgcenter/GitDemo (master)
+$ git log --grep="file2"
+commit eebd8570fd76b90408daa614f0f8e337587a1544
+Author: nivedita <nivedita_dhok@persistent.com>
+Date:   Mon Apr 16 15:00:52 2018 +0530
+
+    changes in file2
+
+nivedita_dhok@NGD10215 MINGW64 /d/Knowledgcenter/GitDemo (master)
+$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        .class.txt
+        .gitignore
+        GIt log --help.txt
+        abc.class.rtf
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+nivedita_dhok@NGD10215 MINGW64 /d/Knowledgcenter/GitDemo (master)
+$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        .class.txt
+        .gitignore
+        GIt log --help.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+nivedita_dhok@NGD10215 MINGW64 /d/Knowledgcenter/GitDemo (master)
+$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        .gitignore
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+nivedita_dhok@NGD10215 MINGW64 /d/Knowledgcenter/GitDemo (master)
+$ git add .
+
+nivedita_dhok@NGD10215 MINGW64 /d/Knowledgcenter/GitDemo (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        new file:   .gitignore
+
+
+nivedita_dhok@NGD10215 MINGW64 /d/Knowledgcenter/GitDemo (master)
+$ git commit -m "Adding the gitignore file"
+[master 16dfa1c] Adding the gitignore file
+ 1 file changed, 5 insertions(+)
+ create mode 100644 .gitignore
+
+nivedita_dhok@NGD10215 MINGW64 /d/Knowledgcenter/GitDemo (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+nivedita_dhok@NGD10215 MINGW64 /d/Knowledgcenter/GitDemo (master)
+$ git log --oneline
+16dfa1c (HEAD -> master) Adding the gitignore file
+c002cac changes in file3
+eebd857 changes in file2
+bd61828 changes in file1
+0cdc72f File1abc.txt is created and merge
+
+nivedita_dhok@NGD10215 MINGW64 /d/Knowledgcenter/GitDemo (master)
+$ git checkout 0cdc72f
+Note: checking out '0cdc72f'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by performing another checkout.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -b with the checkout command again. Example:
+
+  git checkout -b <new-branch-name>
+
+HEAD is now at 0cdc72f... File1abc.txt is created and merge
+
+nivedita_dhok@NGD10215 MINGW64 /d/Knowledgcenter/GitDemo ((0cdc72f...))
+$ git checkout master
+Previous HEAD position was 0cdc72f... File1abc.txt is created and merge
+Switched to branch 'master'
+
+nivedita_dhok@NGD10215 MINGW64 /d/Knowledgcenter/GitDemo (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+nivedita_dhok@NGD10215 MINGW64 /d/Knowledgcenter/GitDemo (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   .gitignore
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        .class.txt
+        File2.txt
+        GIt log --help.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+nivedita_dhok@NGD10215 MINGW64 /d/Knowledgcenter/GitDemo (master)
+$ git add.
+git: 'add.' is not a git command. See 'git --help'.
+
+Did you mean this?
+        add
+
+nivedita_dhok@NGD10215 MINGW64 /d/Knowledgcenter/GitDemo (master)
+$ git add .
+
+nivedita_dhok@NGD10215 MINGW64 /d/Knowledgcenter/GitDemo (master)
+$ git commit -m "chnegs with file2:
+>
+> ^C
+
+nivedita_dhok@NGD10215 MINGW64 /d/Knowledgcenter/GitDemo (master)
+$ git commit -m "chnegs with file2"
+[master 0dc4bce] chnegs with file2
+ 4 files changed, 1304 insertions(+), 1 deletion(-)
+ create mode 100644 .class.txt
+ create mode 100644 File2.txt
+ create mode 100644 GIt log --help.txt
+
+nivedita_dhok@NGD10215 MINGW64 /d/Knowledgcenter/GitDemo (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+nivedita_dhok@NGD10215 MINGW64 /d/Knowledgcenter/GitDemo (master)
+$ git log --oneline
+0dc4bce (HEAD -> master) chnegs with file2
+16dfa1c Adding the gitignore file
+c002cac changes in file3
+eebd857 changes in file2
+bd61828 changes in file1
+0cdc72f File1abc.txt is created and merge
+
+nivedita_dhok@NGD10215 MINGW64 /d/Knowledgcenter/GitDemo (master)
+$ git commit -am "chnages1 in file2"
+[master ed7b810] chnages1 in file2
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+
+nivedita_dhok@NGD10215 MINGW64 /d/Knowledgcenter/GitDemo (master)
+$ git commit -am "chnages2 in file2"
+[master 449a5e6] chnages2 in file2
+ 1 file changed, 1 insertion(+)
+
+nivedita_dhok@NGD10215 MINGW64 /d/Knowledgcenter/GitDemo (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+nivedita_dhok@NGD10215 MINGW64 /d/Knowledgcenter/GitDemo (master)
+$ git log --oneline
+449a5e6 (HEAD -> master) chnages2 in file2
+ed7b810 chnages1 in file2
+0dc4bce chnegs with file2
+16dfa1c Adding the gitignore file
+c002cac changes in file3
+eebd857 changes in file2
+bd61828 changes in file1
+0cdc72f File1abc.txt is created and merge
+
+nivedita_dhok@NGD10215 MINGW64 /d/Knowledgcenter/GitDemo (master)
+$ git revert 449a5e6
+[master 1b969ef] Revert "chnages2 in file2"
+ 1 file changed, 1 deletion(-)
+
+nivedita_dhok@NGD10215 MINGW64 /d/Knowledgcenter/GitDemo (master)
+$ git revert 449a5e6
+On branch master
+nothing to commit, working tree clean
+
+nivedita_dhok@NGD10215 MINGW64 /d/Knowledgcenter/GitDemo (master)
+$ git log --oneline
+1b969ef (HEAD -> master) Revert "chnages2 in file2"
+449a5e6 chnages2 in file2
+ed7b810 chnages1 in file2
+0dc4bce chnegs with file2
+16dfa1c Adding the gitignore file
+c002cac changes in file3
+eebd857 changes in file2
+bd61828 changes in file1
+0cdc72f File1abc.txt is created and merge
+
+nivedita_dhok@NGD10215 MINGW64 /d/Knowledgcenter/GitDemo (master)
+$ git ststus
+git: 'ststus' is not a git command. See 'git --help'.
+
+Did you mean this?
+        status
+
+nivedita_dhok@NGD10215 MINGW64 /d/Knowledgcenter/GitDemo (master)
+$ git stastus
+git: 'stastus' is not a git command. See 'git --help'.
+
+Did you mean this?
+        status
+
+nivedita_dhok@NGD10215 MINGW64 /d/Knowledgcenter/GitDemo (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+nivedita_dhok@NGD10215 MINGW64 /d/Knowledgcenter/GitDemo (master)
+$ git branch
+* master
+
+nivedita_dhok@NGD10215 MINGW64 /d/Knowledgcenter/GitDemo (master)
+$ git branch bug123
+
+nivedita_dhok@NGD10215 MINGW64 /d/Knowledgcenter/GitDemo (master)
+$ git branch
+  bug123
+* master
+
+nivedita_dhok@NGD10215 MINGW64 /d/Knowledgcenter/GitDemo (master)
+$ git checkout bug123
+Switched to branch 'bug123'
+
+nivedita_dhok@NGD10215 MINGW64 /d/Knowledgcenter/GitDemo (bug123)
+$ git status
+On branch bug123
+nothing to commit, working tree clean
+
+nivedita_dhok@NGD10215 MINGW64 /d/Knowledgcenter/GitDemo (bug123)
+$ git branch
+* bug123
+  master
+
+nivedita_dhok@NGD10215 MINGW64 /d/Knowledgcenter/GitDemo (bug123)
+$ git status
+On branch bug123
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   File1abc.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+nivedita_dhok@NGD10215 MINGW64 /d/Knowledgcenter/GitDemo (bug123)
+$ git diff
+diff --git a/File1abc.txt b/File1abc.txt
+index ba2e434..2113d1a 100644
+--- a/File1abc.txt
++++ b/File1abc.txt
+@@ -1,7 +1,7 @@
+ Welcome to the Got training..!!!!!!!!!!!
+
+-Change1
++Change 1
+
+-change2
++Change 2
+
+-chnages3
+\ No newline at end of file
++Change 3
+\ No newline at end of file
+
+nivedita_dhok@NGD10215 MINGW64 /d/Knowledgcenter/GitDemo (bug123)
+$ git commit -am "Bugfix request no 123 resolved"
+[bug123 c9b4a14] Bugfix request no 123 resolved
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+
+nivedita_dhok@NGD10215 MINGW64 /d/Knowledgcenter/GitDemo (bug123)
+$ git status
+On branch bug123
+nothing to commit, working tree clean
+
+nivedita_dhok@NGD10215 MINGW64 /d/Knowledgcenter/GitDemo (bug123)
+$ git log --oneline
+c9b4a14 (HEAD -> bug123) Bugfix request no 123 resolved
+1b969ef (master) Revert "chnages2 in file2"
+449a5e6 chnages2 in file2
+ed7b810 chnages1 in file2
+0dc4bce chnegs with file2
+16dfa1c Adding the gitignore file
+c002cac changes in file3
+eebd857 changes in file2
+bd61828 changes in file1
+0cdc72f File1abc.txt is created and merge
+
+nivedita_dhok@NGD10215 MINGW64 /d/Knowledgcenter/GitDemo (bug123)
+$ git checkout master
+Switched to branch 'master'
+
+nivedita_dhok@NGD10215 MINGW64 /d/Knowledgcenter/GitDemo (master)
+$ git log --oneline
+1b969ef (HEAD -> master) Revert "chnages2 in file2"
+449a5e6 chnages2 in file2
+ed7b810 chnages1 in file2
+0dc4bce chnegs with file2
+16dfa1c Adding the gitignore file
+c002cac changes in file3
+eebd857 changes in file2
+bd61828 changes in file1
+0cdc72f File1abc.txt is created and merge
+
+nivedita_dhok@NGD10215 MINGW64 /d/Knowledgcenter/GitDemo (master)
+$ git merge bug123
+Updating 1b969ef..c9b4a14
+Fast-forward
+ File1abc.txt | 6 +++---
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+
+nivedita_dhok@NGD10215 MINGW64 /d/Knowledgcenter/GitDemo (master)
+$ git log --oneline --decorate --graph
+* c9b4a14 (HEAD -> master, bug123) Bugfix request no 123 resolved
+* 1b969ef Revert "chnages2 in file2"
+* 449a5e6 chnages2 in file2
+* ed7b810 chnages1 in file2
+* 0dc4bce chnegs with file2
+* 16dfa1c Adding the gitignore file
+* c002cac changes in file3
+* eebd857 changes in file2
+* bd61828 changes in file1
+* 0cdc72f File1abc.txt is created and merge
+
+nivedita_dhok@NGD10215 MINGW64 /d/Knowledgcenter/GitDemo (master)
+$ git remote
